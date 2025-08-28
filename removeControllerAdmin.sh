@@ -3,7 +3,7 @@
 # Author: Mitchell Haley
 # Created: 2025-08-28
 # Description: This script is designed to help remove admins from the unifi controller across all sites on a controller
-# Usage: curl -s https://raw.githubusercontent.com/mitchhaley5/UniFi-Scripts/refs/heads/main/removeControllerAdmin.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"
+# Usage: TMP=$(mktemp) && curl -s https://raw.githubusercontent.com/mitchhaley5/UniFi-Scripts/refs/heads/main/removeControllerAdmin.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"
 # -----------------------------------------------------------------------------
 
 echo "WARNING! This script will remove an admin from the entire UniFi controller. This could result in being locked out of the controller."
