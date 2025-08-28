@@ -9,8 +9,8 @@
 echo "WARNING! This script will remove an admin from the entire UniFi controller. This could result in being locked out of the controller."
 read -p "Email of Admin to Remove: " admin_email
 
-
-
+# Convert email to lowercase
+admin_email=${admin_email,,}
 
 # Query MongoDB by email for the admins ID
 admin_info=$(mongosh --quiet --port 27117 ace --eval "JSON.stringify(db.admin.findOne({\"email\":\"$admin_email\"}))")
