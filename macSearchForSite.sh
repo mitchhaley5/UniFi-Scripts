@@ -5,7 +5,10 @@
 # Description: This script is designed to help locate the site a UniFi device is located in.
 #              It will prompt the user for the device's MAC address and returns the site name that the
 #              device is located in.
+# Usage: curl -s https://raw.githubusercontent.com/mitchhaley5/UniFi-Scripts/refs/heads/main/macSearchForSite.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"
 # -----------------------------------------------------------------------------
+
+
 
 read -p "Device MAC Address: " mac
 
