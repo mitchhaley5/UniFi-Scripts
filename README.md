@@ -18,4 +18,4 @@ Run the following commands in the shell as root:
 
 _This command can be found in the 'Usage' section of the header of each script_
   
-`curl -s https://raw.githubusercontent.com/mitchhaley5/UniFi-Scripts/refs/heads/main/<scriptname>.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"`
+`TMP=$(mktemp) && curl -s https://raw.githubusercontent.com/mitchhaley5/UniFi-Scripts/refs/heads/main/<scriptname>.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"`
