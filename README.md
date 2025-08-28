@@ -1,11 +1,12 @@
 # UniFi Scripts
 
-a collection of scripts that can be used to perform certain functions on the UniFi controller
+a collection of scripts that can be used to perform certain functions on the UniFi controller.
 
 
 
 
 ## Usage
+The scripts are intended to be run on the UniFi controller itself
 There are 2 methods for using the scripts:
 #### 1. Download and Run Using BASH
 Run the following commands in the shell:
