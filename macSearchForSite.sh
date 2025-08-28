@@ -15,7 +15,7 @@ mac=$(echo "$mac" | sed 's/[^0-9a-f]//g')
 
 # Ensure MAC is valid (Contains exactly 12 hexadecimal characters)
 if [[ ! "$mac" =~ ^[0-9a-f]{12}$ ]]; then
-  echo "Invalid MAC address format. Please enter 12 hexadecimal characters."
+  echo "Invalid MAC address format ($mac). Please enter 12 hexadecimal characters."
   exit 1
 fi
 
