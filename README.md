@@ -14,7 +14,8 @@ Run the following commands in the shell as root:
 
 `bash /path/to/<scriptname>.sh`
 
-#### 2. (Single line) Run in a Temp File which is Removed when Execution is Complete
-run the following command in the shell as root:
+#### 2. (Single line) Run in a Temp File which is Removed when Execution is Complete run the following command in the shell as root:
 
-`TMP=$(mktemp) && curl -s https://raw.githubusercontent.com/username/repo/branch/<scriptname>.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"`
+_This command can be found in the 'Usage' section of the header of each script_
+  
+`curl -s https://raw.githubusercontent.com/mitchhaley5/UniFi-Scripts/refs/heads/main/<scriptname>.sh -o "$TMP" && bash "$TMP" && rm -f "$TMP"`
